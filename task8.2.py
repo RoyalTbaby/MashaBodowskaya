@@ -8,11 +8,9 @@
 
 def check(string):
     if string == string[::-1]:
-        return "There you go!"
-    else:
-        return "Sorry boo :("
+        print(f'{string} is a palindrome')
 
 
-words = ["Mamam", "betеy", "шаЛаШ"]
+words = ["Miriam", "betеy", "шаЛаШ"]
 for word in words:
-    print(check(word.lower()))
+    check(word.lower())
